@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactez-moi</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Menu de navigation -->
     <header>
         <nav class="navbar">
             <h1>Louis Blouin</h1>
@@ -21,14 +20,13 @@
         </nav>
     </header>
 
-    <!-- Contenu de la page Contact -->
     <section class="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Votre nom" required>
-                <input type="email" id="email" placeholder="Votre email" required>
-                <textarea id="message" placeholder="Votre message" required></textarea>
+            <h2>Contactez-moi</h2>
+            <form action="https://formspree.io/f/xknkjwwd" method="POST" id="contactForm">
+                <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                <input type="email" name="email" id="email" placeholder="Votre email" required>
+                <textarea name="message" id="message" placeholder="Votre message" required></textarea>
                 <button type="submit" class="btn">Envoyer</button>
             </form>
         </div>
@@ -38,6 +36,6 @@
         <p>&copy; 2024 Louis Blouin. Tous droits réservés.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

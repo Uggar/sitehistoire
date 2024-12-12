@@ -4,72 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site Professionnel</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="overlay"></div>
-        <div class="header-content">
+    <!-- Menu de navigation -->
+    <header>
+        <nav class="navbar">
             <h1>Louis Blouin</h1>
-            <p>Développeur Web & Passionné d'Informatique</p>
-            <a href="#about" class="btn">En savoir plus</a>
-        </div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="section about">
-        <div class="container">
-            <h2>À propos de moi</h2>
-            <p>Je suis un développeur web passionné par la création de sites modernes et interactifs. J'ai une solide expérience en programmation, design et gestion de projets.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2>Compétences</h2>
-            <div class="skills-list">
-                <div class="skill-item">
-                    <h3>HTML & CSS</h3>
-                    <div class="bar" style="width: 90%;"></div>
-                </div>
-                <div class="skill-item">
-                    <h3>JavaScript</h3>
-                    <div class="bar" style="width: 85%;"></div>
-                </div>
-                <div class="skill-item">
-                    <h3>React</h3>
-                    <div class="bar" style="width: 80%;"></div>
-                </div>
-                <div class="skill-item">
-                    <h3>Node.js</h3>
-                    <div class="bar" style="width: 75%;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2>Projets</h2>
-            <div class="project-card">
-                <h3>Site Web de Portfolio</h3>
-                <p>Création d'un site web responsive pour présenter mes projets et compétences.</p>
-            </div>
-            <div class="project-card">
-                <h3>Application de Gestion de Tâches</h3>
-                <p>Développement d'une application mobile pour organiser les tâches quotidiennes.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Votre nom" required>
-                <input type="email" id="email" placeholder="Votre email" required>
-                <textarea id="message" placeholder="Votre message" required></textarea>
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
+    <!-- Contenu de la page d'accueil -->
+    <section class="home">
+        <div class="home-content">
+            <h2>Bienvenue sur mon site professionnel</h2>
+            <p>Développeur web passionné par l'informatique et la technologie</p>
+            <a href="about.html" class="btn">En savoir plus</a>
         </div>
     </section>
 
@@ -77,6 +34,6 @@
         <p>&copy; 2024 Louis Blouin. Tous droits réservés.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
